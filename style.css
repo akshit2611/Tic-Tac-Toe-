@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 40px 0 20px;
+  background: #03A6A1;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#msg{
+  text-align: center;
+  text-decoration: underline;
+  color: red;
+  font-size: xx-large;
+  display: none;
+}
+/* H1  Style*/
+.title {
+  text-decoration: underline;
+  background-color: #C0C9EE;
+  font-size: 3rem;
+  color: #0e0101;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+}
+.button {
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 2px solid #333;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+#restart{
+text-align: center;
+color: aqua;
+background-color: #0e0101;
+position: relative;
+top: 130px;
+width: 100px;
+height: 30px;
+text-decoration: underline;
+}
+.button:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
+/*Responsivness*/
+@media (max-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  #game {
+    grid-template-columns: repeat(3, 80px);
+    gap: 8px;
+  }
+
+  .button {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+}

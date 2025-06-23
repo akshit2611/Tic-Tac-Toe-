@@ -1,1 +1,1 @@
-The Tic-Tac-Toe Game.Enjoy Playing this game with your Friends and Family.
+The Tic-Tac-Toe Game.<br>Play this game with your friends to look COOL. 
